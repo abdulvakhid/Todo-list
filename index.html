@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,68 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>86-dars</title>
 </head>
-<body class="bg-success">
 
+<body class="">
 
-   <main>
-    <h1 class="visually-hidden">todo list</h1>
-    <section>
-        <h2 class="visually-hidden">todo list</h2>
+    <header class="mt-5">
         <div class="container">
-            <p class="text-center display-1 fw-bolder text-warning">Todo list</p>
-            <form class="d-flex mt-5 w-50 mx-auto todo-form">
-                <input class="form-control bg-light me-3" type="text" placeholder="new task">
-                <button class="btn btn-primary w-25" type="submit">Add task</button>
+            <form class="d-flex search-form">
+                <input class="form-control w-25 me-3 input-search" type="search" placeholder="search">
+                <button class="btn btn-info search-btn" type="submit">search</button>
             </form>
-            <div class="box w-50 mx-auto mt-5 ">
-                <p class="fw-bolder fs-5 text-white fw-bold fs-1">Tasks</p>
-            </div>
         </div>
-    </section>
-   </main>
-    
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">todo list</h1>
+        <section>
+            <h2 class="visually-hidden">todo list</h2>
+            <div class="container">
+                <div class=" row">
+
+                    <div class="wrapper align-self-end col-4 text-center text-uppercase mt-5 ">
+                       <span class="mb-3">
+                        <span class="d-block  p-2 bg-warning rounded-5 allC">all</span> <span class="all "></span>
+                       </span>
+                       <span class="mb-3">
+                        <span class="d-block p-2 bg-success rounded-5 completeC">complete</span> <span
+                        class="complete"></span>
+                       </span>
+                     <span>
+                        <span class="d-block p-2 bg-danger rounded-5 uncompleteC">uncomplete</span> <span
+                        class="uncomplete"></span>
+                     </span>
+                    </div>
+
+                    <div class="col-8">
+                        <p class="text-center display-1 fw-bolder text-warning">Todo list</p>
+                        <form class="d-flex mt-5 mx-auto todo-form">
+                            <input class="form-control bg-light me-3" type="text" placeholder="new task">
+                            <button class="btn btn-primary w-50" type="submit">Add task</button>
+                        </form>
+                        
+                    </div>
+                </div>
+
+                <form class="box w-50 mx-auto mt-5 " method="post">
+                    <p class="fw-bolder fs-5 text-white fw-bold fs-1">Tasks</p>
+                    <ol class="list">
+
+                    </ol>
+                </form>
+
+                <ol class="delete-list">
+
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <audio id="delete-aud" src="./aud/delete.mp3"></audio>
+    <audio id="reset-aud" src="./aud/reset.mp3"></audio>
+
+    <script src=""></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
